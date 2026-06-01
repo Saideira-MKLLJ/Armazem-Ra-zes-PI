@@ -1,0 +1,40 @@
+body{
+    background-color:#092a00;
+}
+.retangulo1 {
+    width: 600px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.4);
+    top: 150px;
+    left: 80px;
+}
+.retangulo2 {
+    width: 600px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.4);
+    top: 200px;
+    left: 80px;
+}
+h3{
+    color:black;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+}
+.icone{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: -10px;
+    left:500px;
+}

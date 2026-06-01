@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/styleV.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>ARMAZEM RAÍZES</h1>
+      <p>Tabela de produtos</p>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="pgI.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vendas</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section>
+      <h2>ARMAZEM</h2>
+
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Código</th>
+              <th scope="col">Produto</th>
+              <th scope="col">Categoria</th>
+              <th scope="col">Preço</th>
+              <th scope="col">Estoque</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">001</td>
+              <td>Caderno universitário</td>
+              <td>Papelaria</td>
+              <td>R$ 24,90</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td scope="row">002</td>
+              <td>Caneta esferográfica</td>
+              <td>Papelaria</td>
+              <td>R$ 3,50</td>
+              <td>120</td>
+            </tr>
+            <tr>
+              <td scope="row">003</td>
+              <td>Fone de ouvido</td>
+              <td>Eletrônicos</td>
+              <td>R$ 89,90</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td scope="row">004</td>
+              <td>Mouse sem fio</td>
+              <td>Eletrônicos</td>
+              <td>R$ 74,90</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td scope="row">005</td>
+              <td>Garrafa térmica</td>
+              <td>Acessórios</td>
+              <td>R$ 59,90</td>
+              <td>14</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+    </div>
+  </footer>
+
+  <div class="hstack gap-3">
+  <input class="form-control me-auto" type="text" placeholder="Adicione seu produto..." aria-label="Adicione seu produto...">
+  <button type="button" class="btn btn-secondary" onclick="mostrarQuantidade(); mostrarPreco(); mostrarCategoria();">Submit</button>
+  <div class="vr"></div>
+  <button type="button" class="btn btn-outline-danger">Reset</button>
+</div>
+<div id="quantidadeDiv" style="display: none; margin-top:20px;">
+
+    <input 
+        type="number"
+        id="quantidade"
+        class="form-control"
+        placeholder="Digite a quantidade"
+    >
+</div>
+<div id="precoDiv" style="display: none; margin-top:20px;">
+
+    <input 
+        type="number"
+        id="preco"
+        class="form-control"
+        placeholder="Digite o preço"
+        step="0.01"
+        min="0"
+    >
+</div>
+<div id="categoriaDiv" style="display: none; margin-top:20px;">
+
+    <input 
+        type="text"
+        id="categoria"
+        class="form-control campo"
+        placeholder="Digite a categoria"
+    >
+</div>
+<script>
+function mostrarQuantidade() {
+    document.getElementById("quantidadeDiv").style.display = "block";
+}
+
+function mostrarPreco() {
+    document.getElementById("precoDiv").style.display = "block";
+}
+function mostrarCategoria() {
+    document.getElementById("categoriaDiv").style.display = "block";
+}
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
