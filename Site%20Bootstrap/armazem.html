@@ -2,106 +2,40 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produtos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/styleV.css">
 </head>
 
 <body>
 
-  <header>
-    <div>
-      <h1>ARMAZEM RAÍZES</h1>
-      <p>Tabela de produtos</p>
+  <nav class="navbar-custom">
+
+    <div class="nav-container">
+
+        <a href="pgI.html" class="nav-link-custom" data-name="Home">
+            <i class="bi bi-house-fill"></i>
+            <span>Home</span>
+        </a>
+
+        <a href="armazem.html" class="nav-link-custom" data-name="Armazem">
+            <i class="bi bi-box-seam-fill"></i>
+            <span>Armazem</span>
+        </a>
+
     </div>
-  </header>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="pgI.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="produtos.html">Produtos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Vendas</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <section>
-      <h2>ARMAZEM</h2>
-
-      <div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Código</th>
-              <th scope="col">Produto</th>
-              <th scope="col">Categoria</th>
-              <th scope="col">Preço</th>
-              <th scope="col">Estoque</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td scope="row">001</td>
-              <td>Caderno universitário</td>
-              <td>Papelaria</td>
-              <td>R$ 24,90</td>
-              <td>35</td>
-            </tr>
-            <tr>
-              <td scope="row">002</td>
-              <td>Caneta esferográfica</td>
-              <td>Papelaria</td>
-              <td>R$ 3,50</td>
-              <td>120</td>
-            </tr>
-            <tr>
-              <td scope="row">003</td>
-              <td>Fone de ouvido</td>
-              <td>Eletrônicos</td>
-              <td>R$ 89,90</td>
-              <td>18</td>
-            </tr>
-            <tr>
-              <td scope="row">004</td>
-              <td>Mouse sem fio</td>
-              <td>Eletrônicos</td>
-              <td>R$ 74,90</td>
-              <td>22</td>
-            </tr>
-            <tr>
-              <td scope="row">005</td>
-              <td>Garrafa térmica</td>
-              <td>Acessórios</td>
-              <td>R$ 59,90</td>
-              <td>14</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-  </main>
-
+</nav>
   <footer>
     <div>
     </div>
   </footer>
 
-  <div class="hstack gap-3">
+  <div class="hstack gap-3 produto">
   <input class="form-control me-auto" type="text" placeholder="Adicione seu produto..." aria-label="Adicione seu produto...">
   <button type="button" class="btn btn-secondary" onclick="mostrarQuantidade(); mostrarPreco(); mostrarCategoria();">Submit</button>
   <div class="vr"></div>
@@ -153,6 +87,21 @@ function mostrarCategoria() {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script>
+  const links = document.querySelectorAll('.nav-link-custom');
+  const currentPage = window.location.pathname.split('/').pop();
+
+  links.forEach(link => {
+    link.classList.remove('active');
+    const linkPage = link.getAttribute('href').split('/').pop();
+    if (linkPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+</script>
 </body>
 
 </html>
