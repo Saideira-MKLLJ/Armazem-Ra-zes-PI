@@ -1,4 +1,176 @@
-body{
-    font-family: Arial;
-    background: #092a00;
+.produto{
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
+.retangulo1 {
+    width: 300px;
+    height: 200px;
+    background: rgb(23, 54, 13);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.4);
+    top: 150px;
+    left: 80px;
+}
+
+.navbar-custom{
+    width: 100%;
+    height: 110px;
+    background: #092a00;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+/* Item padrão */
+.nav-link-custom{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.nav-link-custom:hover{
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* Item ativo */
+.nav-link-custom.active{
+    background: white;
+    color: #092a00;
+
+    padding: 14px 28px;
+    border-radius: 40px;
+
+    gap: 10px;
+    font-size: 20px;
+
+    transform: scale(1.05);
+
+    animation: pulse 0.3s ease;
+}
+
+.nav-link-custom.active i{
+    font-size: 22px;
+}
+
+/* Esconde texto dos itens não ativos */
+.nav-link-custom span{
+    display: none;
+}
+
+/* Mostra texto apenas no ativo */
+.nav-link-custom.active span{
+    display: inline;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    100%{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background: #092a00;
+  border-bottom: 2px solid #3b6d11;
+}
+.topbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.topbar-logo i {
+  font-size: 22px;
+  color: #97c459;
+}
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.topbar-actions button {
+  background: rgba(255,255,255,0.1);
+  border: 0.5px solid rgba(255,255,255,0.25);
+  color: #fff;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.topbar-actions button:hover {
+  background: rgba(255,255,255,0.2);
+}
+.topbar-actions .btn-primary {
+  background: #639922;
+  border-color: #97c459;
+  font-weight: 500;
+}
+.topbar-actions .btn-primary:hover {
+  background: #4a7218;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 1.25rem;
+}
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+}
+
+.stat-card .num {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.stat-card .lbl {
+    font-size: 12px;
+    color: #6b6b6b;
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+.num-ok     { color: #3B6D11; }
+.num-warn   { color: #BA7517; }
+.num-danger { color: #E24B4A; }
