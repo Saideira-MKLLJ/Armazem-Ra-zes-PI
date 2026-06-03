@@ -62,6 +62,281 @@
   
 
 
+<div class="shelf-toolbar">
+  <div class="shelf-search-box">
+    <i class="ti ti-search"></i>
+    <input type="text" id="shelfSearch" placeholder="Buscar prateleira ou produto…">
+  </div>
+  <div class="shelf-filter-pill active" data-filter="all"><i class="ti ti-layout-grid"></i> Todas</div>
+  <div class="shelf-filter-pill" data-filter="alimentos"><i class="ti ti-soup"></i> Alimentos</div>
+  <div class="shelf-filter-pill" data-filter="bebidas"><i class="ti ti-bottle"></i> Bebidas</div>
+  <div class="shelf-filter-pill" data-filter="limpeza"><i class="ti ti-droplet"></i> Limpeza</div>
+  <div class="shelf-filter-pill" data-filter="higiene"><i class="ti ti-heart"></i> Higiene</div>
+</div>
+
+
+<div class="shelf-section-header">
+  <div class="shelf-section-title">
+    <i class="ti ti-layout-rows"></i>
+    Prateleiras por categoria
+    <span class="shelf-section-badge">24 prateleiras</span>
+  </div>
+  <div class="shelf-view-all">Ver todas <i class="ti ti-arrow-right"></i></div>
+</div>
+
+
+<div class="shelves-grid" id="shelvesGrid">
+
+
+  <div class="shelf-card featured" data-cat="alimentos" data-name="Alimentos Secos arroz feijão macarrão farinha">
+    <div class="shelf-card-header">
+      <div class="shelf-icon-wrap" style="background:#eaf3de;">
+        <i class="ti ti-soup" style="color:#27500a; font-size:22px;"></i>
+      </div>
+      <div class="shelf-badges">
+        <span class="shelf-pill shelf-pill-amber">Repor em breve</span>
+      </div>
+    </div>
+    <div class="shelf-card-body">
+      <div class="shelf-name">Alimentos Secos</div>
+      <div class="shelf-code">PRT-001 · Corredor A</div>
+      <div class="shelf-meta">
+        <div class="shelf-meta-item"><i class="ti ti-box"></i> <strong>342</strong> itens</div>
+        <div class="shelf-meta-item"><i class="ti ti-stack-2"></i> <strong>5</strong> níveis</div>
+        <div class="shelf-meta-item"><i class="ti ti-ruler"></i> <strong>12m²</strong></div>
+      </div>
+      <div class="shelf-capacity-wrap">
+        <div class="shelf-capacity-label"><span>Ocupação</span><span>82%</span></div>
+        <div class="shelf-capacity-bar"><div class="shelf-capacity-fill shelf-fill-amber" style="width:82%"></div></div>
+      </div>
+      <div class="shelf-chips">
+        <span class="shelf-chip">Arroz</span>
+        <span class="shelf-chip">Feijão</span>
+        <span class="shelf-chip">Macarrão</span>
+        <span class="shelf-chip">Farinha</span>
+        <span class="shelf-chip">+18</span>
+      </div>
+    </div>
+    <div class="shelf-card-footer">
+      <div class="shelf-footer-action"><i class="ti ti-eye"></i> Ver detalhes</div>
+      <div class="shelf-last-update"><i class="ti ti-clock"></i> há 2h</div>
+    </div>
+  </div>
+
+
+  <div class="shelf-card" data-cat="bebidas" data-name="Bebidas Não Alcoólicas água suco refrigerante chá">
+    <div class="shelf-card-header">
+      <div class="shelf-icon-wrap" style="background:#e6f1fb;">
+        <i class="ti ti-bottle" style="color:#0c447c; font-size:22px;"></i>
+      </div>
+      <div class="shelf-badges">
+        <span class="shelf-pill shelf-pill-green">Normal</span>
+      </div>
+    </div>
+    <div class="shelf-card-body">
+      <div class="shelf-name">Bebidas Não Alcoólicas</div>
+      <div class="shelf-code">PRT-002 · Corredor A</div>
+      <div class="shelf-meta">
+        <div class="shelf-meta-item"><i class="ti ti-box"></i> <strong>218</strong> itens</div>
+        <div class="shelf-meta-item"><i class="ti ti-stack-2"></i> <strong>4</strong> níveis</div>
+        <div class="shelf-meta-item"><i class="ti ti-ruler"></i> <strong>10m²</strong></div>
+      </div>
+      <div class="shelf-capacity-wrap">
+        <div class="shelf-capacity-label"><span>Ocupação</span><span>64%</span></div>
+        <div class="shelf-capacity-bar"><div class="shelf-capacity-fill shelf-fill-green" style="width:64%"></div></div>
+      </div>
+      <div class="shelf-chips">
+        <span class="shelf-chip">Água</span>
+        <span class="shelf-chip">Suco</span>
+        <span class="shelf-chip">Refrigerante</span>
+        <span class="shelf-chip">Chá</span>
+        <span class="shelf-chip">+9</span>
+      </div>
+    </div>
+    <div class="shelf-card-footer">
+      <div class="shelf-footer-action"><i class="ti ti-eye"></i> Ver detalhes</div>
+      <div class="shelf-last-update"><i class="ti ti-clock"></i> há 5h</div>
+    </div>
+  </div>
+
+ 
+  <div class="shelf-card" data-cat="limpeza" data-name="Produtos de Limpeza detergente sabão desinfetante">
+    <div class="shelf-card-header">
+      <div class="shelf-icon-wrap" style="background:#fcebeb;">
+        <i class="ti ti-droplet" style="color:#501313; font-size:22px;"></i>
+      </div>
+      <div class="shelf-badges">
+        <span class="shelf-pill shelf-pill-red">Estoque crítico</span>
+      </div>
+    </div>
+    <div class="shelf-card-body">
+      <div class="shelf-name">Produtos de Limpeza</div>
+      <div class="shelf-code">PRT-003 · Corredor B</div>
+      <div class="shelf-meta">
+        <div class="shelf-meta-item"><i class="ti ti-box"></i> <strong>89</strong> itens</div>
+        <div class="shelf-meta-item"><i class="ti ti-stack-2"></i> <strong>4</strong> níveis</div>
+        <div class="shelf-meta-item"><i class="ti ti-ruler"></i> <strong>8m²</strong></div>
+      </div>
+      <div class="shelf-capacity-wrap">
+        <div class="shelf-capacity-label"><span>Ocupação</span><span>28%</span></div>
+        <div class="shelf-capacity-bar"><div class="shelf-capacity-fill shelf-fill-red" style="width:28%"></div></div>
+      </div>
+      <div class="shelf-chips">
+        <span class="shelf-chip">Detergente</span>
+        <span class="shelf-chip">Sabão</span>
+        <span class="shelf-chip">Desinfetante</span>
+        <span class="shelf-chip">+5</span>
+      </div>
+    </div>
+    <div class="shelf-card-footer">
+      <div class="shelf-footer-action"><i class="ti ti-refresh"></i> Solicitar reposição</div>
+      <div class="shelf-last-update"><i class="ti ti-clock"></i> há 1d</div>
+    </div>
+  </div>
+
+ 
+  <div class="shelf-card" data-cat="higiene" data-name="Higiene Pessoal shampoo sabonete pasta dental">
+    <div class="shelf-card-header">
+      <div class="shelf-icon-wrap" style="background:#fbeaf0;">
+        <i class="ti ti-heart" style="color:#4b1528; font-size:22px;"></i>
+      </div>
+      <div class="shelf-badges">
+        <span class="shelf-pill shelf-pill-green">Normal</span>
+      </div>
+    </div>
+    <div class="shelf-card-body">
+      <div class="shelf-name">Higiene Pessoal</div>
+      <div class="shelf-code">PRT-004 · Corredor B</div>
+      <div class="shelf-meta">
+        <div class="shelf-meta-item"><i class="ti ti-box"></i> <strong>175</strong> itens</div>
+        <div class="shelf-meta-item"><i class="ti ti-stack-2"></i> <strong>5</strong> níveis</div>
+        <div class="shelf-meta-item"><i class="ti ti-ruler"></i> <strong>9m²</strong></div>
+      </div>
+      <div class="shelf-capacity-wrap">
+        <div class="shelf-capacity-label"><span>Ocupação</span><span>71%</span></div>
+        <div class="shelf-capacity-bar"><div class="shelf-capacity-fill shelf-fill-green" style="width:71%"></div></div>
+      </div>
+      <div class="shelf-chips">
+        <span class="shelf-chip">Shampoo</span>
+        <span class="shelf-chip">Sabonete</span>
+        <span class="shelf-chip">Pasta dental</span>
+        <span class="shelf-chip">+12</span>
+      </div>
+    </div>
+    <div class="shelf-card-footer">
+      <div class="shelf-footer-action"><i class="ti ti-eye"></i> Ver detalhes</div>
+      <div class="shelf-last-update"><i class="ti ti-clock"></i> há 3h</div>
+    </div>
+  </div>
+
+  
+  <div class="shelf-card" data-cat="alimentos" data-name="Frios Laticínios queijo iogurte manteiga">
+    <div class="shelf-card-header">
+      <div class="shelf-icon-wrap" style="background:#faeeda;">
+        <i class="ti ti-apple" style="color:#412402; font-size:22px;"></i>
+      </div>
+      <div class="shelf-badges">
+        <span class="shelf-pill shelf-pill-amber">Repor em breve</span>
+      </div>
+    </div>
+    <div class="shelf-card-body">
+      <div class="shelf-name">Frios e Laticínios</div>
+      <div class="shelf-code">PRT-005 · Corredor C</div>
+      <div class="shelf-meta">
+        <div class="shelf-meta-item"><i class="ti ti-box"></i> <strong>134</strong> itens</div>
+        <div class="shelf-meta-item"><i class="ti ti-stack-2"></i> <strong>3</strong> níveis</div>
+        <div class="shelf-meta-item"><i class="ti ti-ruler"></i> <strong>7m²</strong></div>
+      </div>
+      <div class="shelf-capacity-wrap">
+        <div class="shelf-capacity-label"><span>Ocupação</span><span>55%</span></div>
+        <div class="shelf-capacity-bar"><div class="shelf-capacity-fill shelf-fill-amber" style="width:55%"></div></div>
+      </div>
+      <div class="shelf-chips">
+        <span class="shelf-chip">Queijo</span>
+        <span class="shelf-chip">Iogurte</span>
+        <span class="shelf-chip">Manteiga</span>
+        <span class="shelf-chip">+7</span>
+      </div>
+    </div>
+    <div class="shelf-card-footer">
+      <div class="shelf-footer-action"><i class="ti ti-eye"></i> Ver detalhes</div>
+      <div class="shelf-last-update"><i class="ti ti-clock"></i> há 6h</div>
+    </div>
+  </div>
+
+  
+  
+  <div class="shelf-card" data-cat="alimentos" data-name="Hortifruti frutas legumes verduras tomate">
+    <div class="shelf-card-header">
+      <div class="shelf-icon-wrap" style="background:#e8f8e8;">
+        <i class="ti ti-leaf" style="color:#1a5c1a; font-size:22px;"></i>
+      </div>
+      <div class="shelf-badges">
+        <span class="shelf-pill shelf-pill-green">Normal</span>
+      </div>
+    </div>
+    <div class="shelf-card-body">
+      <div class="shelf-name">Hortifruti</div>
+      <div class="shelf-code">PRT-006 · Corredor C</div>
+      <div class="shelf-meta">
+        <div class="shelf-meta-item"><i class="ti ti-box"></i> <strong>210</strong> itens</div>
+        <div class="shelf-meta-item"><i class="ti ti-stack-2"></i> <strong>2</strong> níveis</div>
+        <div class="shelf-meta-item"><i class="ti ti-ruler"></i> <strong>14m²</strong></div>
+      </div>
+      <div class="shelf-capacity-wrap">
+        <div class="shelf-capacity-label"><span>Ocupação</span><span>90%</span></div>
+        <div class="shelf-capacity-bar"><div class="shelf-capacity-fill shelf-fill-green" style="width:90%"></div></div>
+      </div>
+      <div class="shelf-chips">
+        <span class="shelf-chip">Tomate</span>
+        <span class="shelf-chip">Alface</span>
+        <span class="shelf-chip">Banana</span>
+        <span class="shelf-chip">+14</span>
+      </div>
+    </div>
+    <div class="shelf-card-footer">
+      <div class="shelf-footer-action"><i class="ti ti-eye"></i> Ver detalhes</div>
+      <div class="shelf-last-update"><i class="ti ti-clock"></i> há 1h</div>
+    </div>
+  </div>
+
+ 
+  <div class="shelf-empty">
+    <i class="ti ti-plus"></i>
+    <span>Nova categoria</span>
+  </div>
+
+</div>
+
+
+<script>
+  
+  document.querySelectorAll('.shelf-filter-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.shelf-filter-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      const f = pill.dataset.filter;
+      document.querySelectorAll('.shelf-card[data-cat]').forEach(card => {
+        card.style.display = (f === 'all' || card.dataset.cat === f) ? '' : 'none';
+      });
+    });
+  });
+
+ 
+  document.getElementById('shelfSearch').addEventListener('input', function () {
+    const q = this.value.toLowerCase();
+    document.querySelectorAll('.shelf-card[data-cat]').forEach(card => {
+      card.style.display = (card.dataset.name || '').toLowerCase().includes(q) ? '' : 'none';
+    });
+    if (!q) {
+      const active = document.querySelector('.shelf-filter-pill.active');
+      if (active) active.dispatchEvent(new Event('click'));
+    }
+  });
+</script>
+
+
+
 
 
 
