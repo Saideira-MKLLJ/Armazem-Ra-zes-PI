@@ -102,6 +102,19 @@ h3{
     display: inline;
 }
 
+.btn-success{
+    background: linear-gradient(135deg, #092a00, #176402);
+    border: none;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: all .3s ease;
+}
+
+.btn-success:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(25,135,84,.4);
+}
+
 @keyframes pulse{
     0%{
         transform: scale(0.8);
