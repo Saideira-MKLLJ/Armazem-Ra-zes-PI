@@ -13,78 +13,73 @@
 
 <body>
 
-  <nav class="navbar-custom">
-
+<nav class="navbar-custom">
     <div class="nav-container">
 
-        <a href="pgI.html" class="nav-link-custom" data-name="Home">
+        <a href="pgI.html" class="nav-link-custom">
             <i class="bi bi-house-fill"></i>
             <span>Home</span>
         </a>
 
-        <a href="armazem.html" class="nav-link-custom" data-name="Armazem">
+        <a href="armazem.html" class="nav-link-custom">
             <i class="bi bi-box-seam-fill"></i>
             <span>Armazem</span>
         </a>
-        <a href="produtos.html" class="nav-link-custom" data-name="Produtos">
-            <i class="bi bi-basket2-fill"></i> 
+
+        <a href="produtos.html" class="nav-link-custom">
+            <i class="bi bi-basket2-fill"></i>
             <span>Produtos</span>
-        </a>  
-    </div>
+        </a>
 
+    </div>
 </nav>
-  <footer>
-    <div>
+
+<div class="container-formulario">
+
+    <div class="formulario">
+
+        <div class="icone">
+            📦
+        </div>
+
+        <h3>Cadastro de Produtos</h3>
+
+        <input type="text" class="form-control mb-3"
+               placeholder="Nome do produto">
+
+        <input type="number" class="form-control mb-3"
+               placeholder="Quantidade">
+
+        <input type="text" class="form-control mb-3"
+               placeholder="Categoria">
+
+        <input type="number" class="form-control mb-3"
+               placeholder="Preço">
+
+        <button class="btn btn-success">
+            Salvar Produto
+        </button>
+
     </div>
-  </footer>
 
-  <div class="hstack gap-3 produto">
-  <input class="form-control me-auto" type="text" placeholder="Adicione seu produto..." aria-label="Adicione seu produto...">
-  <button type="button" class="btn btn-secondary" onclick="mostrarQuantidade(); mostrarPreco(); mostrarCategoria();">Submit</button>
-  <div class="vr"></div>
-  <button type="button" class="btn btn-outline-danger">Reset</button>
 </div>
-<div id="quantidadeDiv" style="display: none; margin-top:20px;">
 
-    <input 
-        type="number"
-        id="quantidade"
-        class="form-control"
-        placeholder="Digite a quantidade"
-    >
-</div>
-<div id="precoDiv" style="display: none; margin-top:20px;">
-
-    <input 
-        type="number"
-        id="preco"
-        class="form-control"
-        placeholder="Digite o preço"
-        step="0.01"
-        min="0"
-    >
-</div>
-<div id="categoriaDiv" style="display: none; margin-top:20px;">
-
-    <input 
-        type="text"
-        id="categoria"
-        class="form-control campo"
-        placeholder="Digite a categoria"
-    >
-</div>
 <script>
-function mostrarQuantidade() {
-    document.getElementById("quantidadeDiv").style.display = "block";
-}
+const links = document.querySelectorAll('.nav-link-custom');
+const currentPage = window.location.pathname.split('/').pop();
 
-function mostrarPreco() {
-    document.getElementById("precoDiv").style.display = "block";
-}
-function mostrarCategoria() {
-    document.getElementById("categoriaDiv").style.display = "block";
-}
+links.forEach(link => {
+    link.classList.remove('active');
+    const linkPage = link.getAttribute('href').split('/').pop();
+
+    if(linkPage === currentPage){
+        link.classList.add('active');
+    }
+});
 </script>
+
+</body>
+</html>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
