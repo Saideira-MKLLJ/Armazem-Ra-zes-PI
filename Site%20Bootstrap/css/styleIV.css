@@ -116,6 +116,34 @@ h3{
     box-shadow: 0 8px 20px rgba(25,135,84,.4);
 }
 
+body{
+    background: #f5f7f9;
+}
+
+.card{
+    transition: all .3s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.15)!important;
+}
+
+.card h3{
+    color: #198754;
+    font-weight: 700;
+}
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.container {
+    margin-top: 100px;
+}
 @keyframes pulse{
     0%{
         transform: scale(0.8);
