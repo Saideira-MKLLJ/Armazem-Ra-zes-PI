@@ -70,6 +70,9 @@ body{
         .btn {
             border-radius: 12px;
         }
+        .btn-lg{
+            background-color: #092a00;
+        }
 
         .card-produto:hover {
             transform: translateY(-3px);
