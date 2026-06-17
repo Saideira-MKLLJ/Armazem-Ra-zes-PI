@@ -1,54 +1,94 @@
-body {
+* {
     margin: 0;
-    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-    background: #092a00;      
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #092a00,
+        #1b5e20,
+        #025806
+    );
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.quadrado {
-    width: 500px;
-    height: 500px;
-    background: white;
-    border-radius: 10px;
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    position: relative;
-    box-shadow: 0px 35px 15px rgba(0,0,0,0.4);
 }
 
-.form-floating {
-    width: 70%;
-    position: relative;  
-    top: 100px;           
-    left: 60px;          
-    margin-bottom: 20px;
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+
+    background: linear-gradient(135deg, #092a00, #114d01);
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    text-align: center;
+
+}
+.login-card h1 {
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.link-dark{
-    position: relative;
-    top: 100px;
-    left: 145px;
-    margin-bottom: 5px;
+.login-card p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 25px;
 }
-.btn {
-    padding: 10px 25px;
-    font-size: 16px;
-    border: 1px solid #092a00;   
-    background: transparent;
-    color: #092a00;
-    cursor: pointer;
-    border-radius: 6px;
+
+.form-control {
+    border-radius: 12px;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+
+    background: #4abd4e;
+    color: white;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #ffffff;
+    transform: translateY(-2px);
+}
+
+.link-senha {
+    color: #d4ffd6;
     text-decoration: none;
-    display: inline-block;
-     position: relative;
-    top: 350px;
-    left: 170px;
-    margin-bottom: 5px;
 }
 
-.btn:hover {
-    background: #092a00;
-    border: 1px solid #fff; 
-    color: rgb(255, 255, 255);             
+.link-senha:hover {
+    text-decoration: underline;
+    color: white;
 }
